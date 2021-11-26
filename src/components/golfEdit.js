@@ -25,7 +25,6 @@ function GolfEdit() {
     axios.post('http://localhost/api/golf/search',url)
     .then(res => {
       setGolf(res.data);
-      setImage(res.data.image);
       setLat(res.data.lat);
       setLng(res.data.lng);
       console.log(res);
@@ -70,7 +69,6 @@ function GolfEdit() {
     geocoder.geocode({ address: golf.address }, (results, status) => {
       if (status === 'OK') {
         let center = Object.assign({}, center);
-
         setLat(results[0].geometry.location.lat()),
         setLng(results[0].geometry.location.lng());
         setCenter(center);
