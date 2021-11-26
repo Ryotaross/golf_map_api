@@ -29,7 +29,7 @@ function Home() {
       <>
         <main>
           {load && loadGolf?
-          <div className="loading" {...loadGolf?"":className="animation"}>
+          <div className="loading">
             <img src={golfIcon} className="loadImage"></img>
           </div>:
             <div className='sk-ab sk-index'>

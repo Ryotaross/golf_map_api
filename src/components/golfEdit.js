@@ -69,11 +69,8 @@ function GolfEdit() {
     geocoder.geocode({ address: golf.address }, (results, status) => {
       if (status === 'OK') {
         let center = Object.assign({}, center);
-        setLat(results[0].geometry.location.lat()),
+        setLat(results[0].geometry.location.lat());
         setLng(results[0].geometry.location.lng());
-        setCenter(center);
-        setIsShowMarker(true);
-
       }
     });
   }

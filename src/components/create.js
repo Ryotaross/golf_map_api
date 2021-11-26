@@ -70,7 +70,7 @@ function Create() {
     const geocoder = new window.google.maps.Geocoder();
     geocoder.geocode({ address: golf.address }, (results, status) => {
       if (status === 'OK') {
-        setLat(results[0].geometry.location.lat()),
+        setLat(results[0].geometry.location.lat());
         setLng(results[0].geometry.location.lng());
       }
     });

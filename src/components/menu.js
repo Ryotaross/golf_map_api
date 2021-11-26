@@ -54,11 +54,10 @@ function Menu(props) {
     const geocoder = new window.google.maps.Geocoder();
     geocoder.geocode({ address: props.place.name }, (results, status) => {
       if (status === 'OK') {
-        setLat(results[0].geometry.location.lat()),
+        setLat(results[0].geometry.location.lat());
         setLng(results[0].geometry.location.lng());
         props.Searchlat(results[0].geometry.location.lat());
         props.Searchlng(results[0].geometry.location.lng());
-        console.log(123);
       }
     });
   }
