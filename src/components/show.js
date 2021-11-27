@@ -107,7 +107,7 @@ function Show(props) {
   useEffect(()=>{
     const file = new FormData()
     file.append("id", props.id);
-    axios.post('http://localhost/api/golf/search',file)
+    axios.post('https://short-course-api.herokuapp.com/api/golf/search',file)
     .then(res => {
       setGolf(res.data);
       console.log(res.data);

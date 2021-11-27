@@ -21,7 +21,7 @@ function MeatEdit() {
   useEffect(() => {
     const url = new FormData()
     url.append("id", id);
-    axios.post('http://localhost/api/meat/search',url)
+    axios.post('https://short-course-api.herokuapp.com/api/meat/search',url)
     .then(res => {
       setMeat(res.data);
       setImage(res.data.image);
@@ -42,7 +42,7 @@ function MeatEdit() {
     file.append("startDay", meat.startDay);
 
     axios
-      .post('http://localhost/api/meat/update',file)
+      .post('https://short-course-api.herokuapp.com/api/meat/update',file)
       .then(response => {
         console.log(response);
         history.push('/');
@@ -57,7 +57,7 @@ function MeatEdit() {
     const file = new FormData()
     file.append("id", id);
     axios
-      .post('http://localhost/api/meat/delete',file)
+      .post('https://short-course-api.herokuapp.com/api/meat/delete',file)
       .then(response => {
         console.log(response);
         history.push('/');

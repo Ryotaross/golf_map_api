@@ -29,7 +29,7 @@ function Create() {
     file.append("image", meat.image.files[0]);
 
     axios
-      .post('http://localhost/api/meat/create',{
+      .post('https://short-course-api.herokuapp.com/api/meat/create',{
         name:meat.name,maker:meat.maker,materials:meat.materials,officialUrl:meat.officialUrl,amazonUrl:meat.amazonUrl,
         rakutenUrl:meat.rakutenUrl,image:meat.image,startDay:meat.startDay
         },

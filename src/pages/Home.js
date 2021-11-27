@@ -17,7 +17,7 @@ function Home() {
       setLoad(false)
     }.bind(this),3000);
 
-    axios.get('http://localhost/api/golfs')
+    axios.get('https://short-course-api.herokuapp.com/api/golfs')
     .then(res => {
       setGolfs(res.data);
       console.log(res.data);

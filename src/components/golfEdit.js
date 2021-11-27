@@ -22,7 +22,7 @@ function GolfEdit() {
   useEffect(() => {
     const url = new FormData()
     url.append("id", id);
-    axios.post('http://localhost/api/golf/search',url)
+    axios.post('https://short-course-api.herokuapp.com/api/golf/search',url)
     .then(res => {
       setGolf(res.data);
       setLat(res.data.lat);
@@ -46,7 +46,7 @@ function GolfEdit() {
     file.append("lng", lng);
 
     axios
-      .post('http://localhost/api/golf/update',file)
+      .post('https://short-course-api.herokuapp.com/api/golf/update',file)
       .then(response => {
         console.log(response);
         history.push('/');
@@ -80,7 +80,7 @@ function GolfEdit() {
     const file = new FormData()
     file.append("id", golf.id);
     axios
-      .post('http://localhost/api/golf/delete',file)
+      .post('https://short-course-api.herokuapp.com/api/golf/delete',file)
       .then(response => {
         console.log(response);
         history.push('/');

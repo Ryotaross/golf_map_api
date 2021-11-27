@@ -39,7 +39,7 @@ function Create() {
     file.append("lng", lng);
 
     axios
-      .post('http://localhost/api/golf/create',file,
+      .post('https://short-course-api.herokuapp.com/api/golf/create',file,
         {
           headers: {
           'content-type': 'multipart/form-data',
