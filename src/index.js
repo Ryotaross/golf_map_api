@@ -1,8 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from 'react-router-dom';
+import Home from './pages/Home';
+import New from './pages/New';
+import Edit from './pages/Edit';
+
+function App() {
+  return (
+      <div>
+          <Router>
+            <Switch>
+              <Route path='/' exact component={Home} />
+              <Route path='/create' exact component={New} />
+              <Route exact path="/edit/:id" component={Edit} />
+            </Switch>
+          </Router>
+      </div>
+  );
+}
 
 
 ReactDOM.render(

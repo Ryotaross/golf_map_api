@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState,useEffect } from 'react';
+import { useState} from 'react';
 import { LoadScript } from '@react-google-maps/api';
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -11,7 +11,6 @@ function Menu(props) {
   const [lat,setLat] = useState("");
   const [lng,setLng] = useState("");
 
-  const ariaLabel = { 'aria-label': 'description' };
 
   const Menu = styled.div `
     width:300px;
@@ -85,14 +84,3 @@ function Menu(props) {
 }
 
 export default Menu;
-
-const Card = (props) => {
-  return(
-  <React.Fragment >
-    <props.SearchItem>
-      <Input placeholder="Placeholder" sx={{mr:2}} value={props.place.name} onChange={props.handleInput} />
-      <Button variant="contained" size="small" onClick={props.geocode}>検索</Button>
-    </props.SearchItem>
-  </React.Fragment>
-  )
-};

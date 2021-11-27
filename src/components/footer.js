@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 function Footer(props) {
 
@@ -28,7 +27,7 @@ function Footer(props) {
     <>
       <Foot>
         <List>
-          <Inquiry><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfkZAJmwyBUD0PvWzhaW-oXuZTqJTAox-rBzBjR8UHCXaZ5pA/viewform?usp=sf_link">お問い合わせ</a></Inquiry>
+          <Inquiry><a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfkZAJmwyBUD0PvWzhaW-oXuZTqJTAox-rBzBjR8UHCXaZ5pA/viewform?usp=sf_link" >お問い合わせ</a></Inquiry>
         </List>
       </Foot>
     </>

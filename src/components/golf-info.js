@@ -7,7 +7,7 @@ function GolfInfo(props) {
   const image = () => {
     const image_path = "storage/image/" + info.image;
     return(
-      <img width={240} src={image_path} />
+      <img width={240} src={image_path} alt="ゴルフ場の写真" />
     );
   }
 

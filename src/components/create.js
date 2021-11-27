@@ -1,12 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
-import { Redirect,useHistory } from 'react-router-dom';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import { useHistory } from 'react-router-dom';
+import { LoadScript} from '@react-google-maps/api';
 import axios from 'axios';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import TextField from '@mui/material/TextField';
-import { Alert } from '@mui/material';
 import Button from '@mui/material/Button';
 import { CardMedia } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
@@ -14,7 +13,6 @@ import { blueGrey } from '@mui/material/colors';
 import { grey } from '@mui/material/colors';
 
 function Create() {
-  const googleGeocoder = null;
   const [golf,setGolf] = useState([{name: "",address: "",price: "",courseInfo: "",phone: "",hp:"",moreInfo:"",image:""}]);
   const [image,setImage] = useState();
   const [lat,setLat] = useState("");
@@ -78,7 +76,7 @@ function Create() {
   
   const card = (
     <React.Fragment >
-      <CardMedia sx={{ width:{ xs: 400, md: 800 },height:60,m:'auto',pt:2,fontSize: 20,bgcolor:blueGrey[800],color:grey[50]}}>
+      <CardMedia sx={{ width:{ xs: 400, md: 800 },height:60,m:'auto',pt:2,px:2,fontSize: 20,bgcolor:blueGrey[800],color:grey[50]}}>
           新規作成
       </CardMedia>
       <CardContent sx={{m:'auto',width:{ xs: 400, md: 800 },border:1,borderColor: 'grey.500',boxShadow: 1,bgcolor:grey[50]}}>

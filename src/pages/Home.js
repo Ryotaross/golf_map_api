@@ -2,9 +2,9 @@ import React from 'react';
 import { useState,useEffect } from 'react';
 import axios from 'axios';
 import ReactDOM from 'react-dom';
-import '../style/common.css'
-import Index from '../components/Index';
+import '../style/common.css';
 import Footer from '../components/footer';
+import Index from '../components/index';
 import golfIcon from './image/golf1_animated_300.gif'
 
 function Home() {
@@ -30,7 +30,7 @@ function Home() {
         <main>
           {load && loadGolf?
           <div className="loading">
-            <img src={golfIcon} className="loadImage"></img>
+            <img src={golfIcon} className="loadImage" alt="ローディング画面"></img>
           </div>:
             <div className='sk-ab sk-index'>
               <div className='main'>

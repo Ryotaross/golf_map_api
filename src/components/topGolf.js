@@ -1,5 +1,5 @@
 import React from 'react';
-import styled,{ keyframes } from "styled-components";
+import styled from "styled-components";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import 'react-map-gl-geocoder/dist/mapbox-gl-geocoder.css'
 import '../style/common.css'

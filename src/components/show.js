@@ -161,12 +161,12 @@ function Show(props) {
             </Content>
             </Text>
             <Stack direction="row" spacing={2} justifyContent="center" alignItems="center" sx={{my:5,mx:'auto'}}>
-              <a href={golf.hp} target="_blank">
+              <a href={golf.hp} target="_blank"　rel="noopener noreferrer">
                 <Button variant="contained" color="primary">
                   公式
                 </Button>
               </a>
-              <a href={golf.moreInfo} target="_blank">
+              <a href={golf.moreInfo} target="_blank"　rel="noopener noreferrer">
                 <Button variant="contained" color="warning">
                   詳細情報
                 </Button>

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../style/common.css'
-import GolfEdit from '../components/GolfEdit';
+import '../style/common.css';
+import GolfEdit from '../components/golfEdit';
 
 function Edit() {
     return (
